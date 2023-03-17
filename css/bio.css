@@ -1,0 +1,161 @@
+.main-cover {
+    padding: 15px;    
+    margin: 40px 60px 70px 60px;
+    border-radius: 5px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.flax-container {
+    display: flex;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    background-color: #10143f;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    flex-direction: row;
+    margin: 0px 10px 10px 10px;
+}
+
+.profile_content h1{
+    margin-top: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.profile_heading h2{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: rgb(5, 12, 12);
+    font-size: 26px;
+    text-align: center;
+    font-weight: 700;
+}
+
+.profile_heading h2::after{
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #59bfd7;
+    display: block;
+    margin: 10px auto 0 auto;
+}
+
+.flax-item1 {
+    width: 200px;
+    height: 200px;
+    color: #59bfd7;
+    margin-left: 50px;
+
+
+}
+
+.project-content-left {
+    border-right: 3px solid #59bfd7;
+    margin-top: 60px;
+}
+
+.project-content-left h1{
+    font-size: 28px;
+}
+
+
+.flax-item {
+    width: 200px;
+    flex-grow: 1;
+    height: 200px;
+    font-size: 18px;
+    font-family: 'Trebuchet MS', sans-serif;
+    color: #59bfd7;
+    margin-left: 100px
+}
+
+.bio-content {
+    margin-top: 40px;
+    margin-right: 70px;
+    text-align: justify;
+}
+
+.bio-content p {
+    line-height: 25px;
+}
+
+@media only screen and (max-width: 1056px) {
+    .bio-content {
+        margin-top: 10px;
+        margin-right: 20px;
+        text-align: justify;
+    }
+
+    .flax-item {
+
+        margin-left: 20px
+    }
+
+}
+
+
+@media only screen and (max-width: 870px) {
+    .project-content-left {
+        border-right: 0px solid aqua;
+        border-bottom: 2px solid #59bfd7;
+        width: 250px;
+        margin: 0px auto 0px auto;
+        font-size: 13px;
+
+    }
+    
+.project-content-left h1{
+    font-size: 24px;
+}
+    .flax-item1 {
+        width: 100%;
+        height: 100px;
+        text-align: center;
+        margin: 10px auto 0px 0px;
+
+    }
+
+    .bio-content {
+        margin-top: 10px;
+        box-sizing: content-box;
+        font-size: 16px;
+        
+       
+    }
+
+    .flax-item {
+        width: 200px;
+        height: 400px;
+    }
+
+    .main-cover {
+             
+        margin: 40px 20px 20px 20px;
+        
+    }
+}
+
+
+.profile_content{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    height:200px;
+    width: 300px;
+    margin: 10px auto 10px auto;
+    text-align: center;
+    color: #fff;
+    }
+
+.profile_content img{
+  height: 100px;
+  width: 100px;
+  border-radius: 60%;
+  
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.profile_content h1{
+font-size: 24px;
+color: #59bfd7;
+}
+
+.profile_heading{
+    text-align: center;
+    margin: 10px auto 60px auto;
+}

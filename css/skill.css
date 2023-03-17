@@ -1,0 +1,124 @@
+.main_container {
+    margin: 20px 60px 70px 60px;
+    border: 2px solid #10143f;
+    border-radius: 5px;
+    background-color: #10143f;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(170, 166, 166, 0.3) 0px 8px 16px -8px;
+}
+
+.skillheading_container {
+    width: 270px;
+    float: left;
+    margin-right: 100px;
+
+}
+
+.left_content {
+    margin: 140px 0px 10px 60px;
+    padding: 0px 0px 0px 20px;
+    border-right: 3px solid #59bfd7;
+    color: #59bfd7;
+    
+
+}
+
+:target{
+float : none;
+}
+
+.left_content h1{
+font-size: 32px;
+}
+
+.skills_container {
+    margin: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    box-sizing: border-box;
+    justify-items: center;
+}
+
+.skills_container .skill {
+    position: relative;
+    height: 150px;
+    width: 130px;
+    margin: 15px 15px 15px 10px;
+    text-align: center;
+    color: #59bfd7;
+    background: white;
+           
+}
+
+.skills_container .skill i{
+    font-size: 70px;
+    padding-top: 15px;
+}
+
+.skills_container .skill h2{
+font-size: 20px;
+padding-top: 17px;
+}
+
+
+.skills_container .skill::before {
+   content: "";
+   position: absolute;
+   top: -4px;
+   left: -4px;
+   right: -4px;
+   bottom: -4px;
+   transform: skewX(2deg) skewY(2deg);
+   background: linear-gradient(315deg,#00ccff,#0e1538,#d400d4);
+           
+}
+
+.skills_container .skill::after{
+   content: "";
+   position: absolute;
+   top: -4px;
+   left: -4px;
+   right: -4px;
+   bottom: -4px;
+   transform: skewX(2deg) skewY(2deg);
+   filter: blur(20px);
+   background: linear-gradient(315deg,#00ccff,#0e1538,#d400d4);
+}
+
+.skill span{
+position: absolute;
+top: 0;
+left: 0;
+height: 100%;
+width: 100%;
+background: #10143f;
+z-index: 10;
+}
+
+@media only screen and (max-width: 874px) {
+
+    .skillheading_container {
+        width: 80%;
+        float: none;
+        margin: 20px auto 20px auto;
+    }
+
+    .left_content{
+        border-bottom: 2px solid #59bfd7;
+        border-right: 0px #10143f;
+        text-align: center;
+        margin: 50px 12px 60px 12px;
+        
+    }
+
+    .skills_container {
+        margin-bottom: 20px;
+       
+    }
+
+    .main_container{
+        margin: 40px 20px 20px 20px;
+    }
+
+    
+}

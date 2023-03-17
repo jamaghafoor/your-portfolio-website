@@ -1,0 +1,292 @@
+@import url(https://fonts.googleapis.com/css?family=Karla);
+
+
+#banner {
+    background: url(../images/back.jpg);
+    background-size: cover;
+    text-align: center;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.banner-title {
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+}
+
+
+
+
+#myBtn {
+    display: none;
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+    z-index: 99;
+    font-size: 22px;
+    border: none;
+    outline: none;
+    color: #82c0d0;
+    font-weight: lighter;
+    cursor: pointer;
+    padding: 12px 20px;
+    border-radius: 50%;
+    box-shadow: 0 12px 16px 0 rgba(0, 0, 0, 0.24), 0 17px 50px 0 rgba(0, 0, 0, 0.19);
+}
+
+
+.contact_heading {
+    padding: 30px;
+    margin-top: 30px;
+
+}
+
+.contact_heading h1 {
+    color: rgb(5, 12, 12);
+    font-size: 28px;
+    text-align: center;
+}
+
+.contact_heading h1::after {
+    content: "";
+    height: 3px;
+    width: 100px;
+    background-color: #82c0d0;
+    display: block;
+    margin: 10px auto 10px auto;
+}
+
+
+.social-link ul {
+    position: relative;
+    margin-top: 0px;
+    margin-bottom: 30px;
+    transform: translateY(-50%);
+    width: 100%;
+    text-align: center;
+    padding: 0;
+}
+
+.social-link ul li {
+    list-style: none;
+    margin: 0 20px;
+    text-align: center;
+    padding: 15px;
+    display: inline-block;
+
+}
+
+.social-link ul li a .fa {
+    font-size: 20px;
+    color: #fff;
+    line-height: 40px;
+    transition: .5s;
+}
+
+.social-link ul li #facebook {
+    background: #000000;
+}
+
+.social-link ul li #twitter {
+    background: #74b9ff;
+}
+
+.social-link ul li #linkedin {
+    background: #067bb3;
+}
+
+.social-link ul li #instagram {
+    background: #918a8a;
+}
+
+.social-link ul li #google {
+    background: #dbd6d6;
+}
+
+
+
+
+.social-link ul li a {
+    position: relative;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background: #1e3799;
+    text-align: center;
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(0, 0);
+    transition: 0.5s;
+    box-shadow: -20px 20px 10px rgba(0, 0, 0, .5);
+}
+
+.social-link ul li a:before {
+    content: '';
+    position: absolute;
+    top: 6px;
+    left: -13px;
+    height: 100%;
+    width: 14px;
+    background: #ccc;
+    transition: .5s;
+    transform: rotate(0deg) skewY(-45deg);
+}
+
+.social-link ul li a:after {
+    content: '';
+    position: absolute;
+    bottom: -13px;
+    left: -6px;
+    height: 14px;
+    width: 100%;
+    background: #ccc;
+    transition: .5s;
+    transform: rotate(0deg) skewX(-45deg);
+}
+
+.social-link ul li a:hover {
+    transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(10px, -10px);
+    box-shadow: -50px 50px 50px rgba(0, 0, 0, .5);
+
+}
+
+.messege-me {
+    margin-top: 30px;
+    padding: 0;
+    text-align: center;
+    background-size: auto;
+    background-position: center;
+    font-family: sans-serif;
+}
+
+
+
+.form-control {
+    margin: 10px auto 10px auto;
+    padding: 0;
+    width: 420px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    color: #000;
+    font-size: 18px;
+
+}
+
+input {
+    height: 40px;
+    padding: 0;
+}
+
+form .submit {
+    background: #82c0d0;
+    border-color: transparent;
+    color: #fff;
+    font-size: 20px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 15px;
+    padding: 0;
+}
+
+form .submit:hover {
+    background: #17a7ac;
+    cursor: pointer;
+}
+
+#footer {
+    padding-top: 10px;
+    color: white;
+    background: #82c0d0;
+    text-align: center;
+}
+
+
+@media (max-width: 575px) {
+  
+ .typing-animation{
+        margin-left: 100px;
+        margin-bottom: 30px;
+    } 
+    
+    .messege-me {
+        margin-top: 15px;
+
+    }
+    .form-control {
+        width: 320px;
+    }
+
+    .social-link ul li {
+        margin: 0 7px;
+        padding: 10px;
+    }
+
+    .social-link ul li a {
+        width: 30px;
+        height: 30px;
+    }
+
+    .social-link ul li a .fa {
+    font-size: 17px;
+    
+    line-height: 32px;
+    transition: .5s;
+}
+
+    .contact_heading {
+        padding: 30px;
+        margin-top: 50px;
+
+    }
+
+
+    .banner-title {
+        margin-bottom: 3rem;
+    }
+
+    .typing-animation {
+        padding: 10px;
+    }
+
+    .bio_heading h1 {
+        font-size: 26px;
+        
+    }
+
+
+    .contact_heading h1{
+        font-size: 26px;
+    }
+
+  form .submit{
+        font-size: 16px;
+    }
+
+
+   .social-link ul li a:before {
+        content: '';
+         position: absolute;
+         top: 6px;
+         left: -13px;
+         height: 100%;
+         width: 12px;
+        background: #ccc;
+         transition: .5s;
+         transform: rotate(0deg) skewY(-45deg);
+     }
+     
+    .social-link ul li a:after {
+         content: '';
+         position: absolute;
+         bottom: -13px;
+         left: -6px;
+         height: 12px;
+         width: 100%;
+         background: #ccc;
+         transition: .5s;
+         transform: rotate(0deg) skewX(-45deg);
+     }
+
+
+}
